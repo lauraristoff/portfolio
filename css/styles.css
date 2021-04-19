@@ -1,0 +1,76 @@
+/* 
+Student Name: Laura Ristoff 
+Date: 04/19/2021
+File Name: styles.css
+*/ 
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #faf9f9;
+    color: #343A40;
+}
+
+header {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    margin: 3em 1em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a {
+    display: block;
+    color:#343A40;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+ main {
+     clear: left;
+ }
+
+ footer {
+    font-size: 1.5em;
+    text-align: center;
+    color:#343A40;
+    padding: 0 1em;
+}
+
+footer p {
+    float: left;
+}
+
+footer a {
+    float: right;
+    color:#343A40;
+    padding: 1em;
+}
+
+#contact {
+    text-align: center;
+}
