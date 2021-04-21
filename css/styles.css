@@ -1,76 +1,135 @@
 /* 
 Student Name: Laura Ristoff 
-Date: 04/19/2021
+Date: 04/21/2021
 File Name: styles.css
 */ 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img {
+body, header, nav, main, footer, h1, div, img, ul {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+/*Style rules for body and images and headings*/
+body {
+    background-color: #faf9f9;
+    color: #343A40;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
-body {
-    background-color: #faf9f9;
-    color: #343A40;
+h1 {
+    font-family: atocha,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+/*Style rules for header*/
 header {
-    float: left;
-    width: 30%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #faf9f9;
+    height: 150px;    
 }
 
+header img {
+    margin: 0 auto;
+    background-color: #faf9f9;
+}
+
+/*Style rules for navigation*/
 nav {
-    float: right;
-    width: 60%;
-    margin: 3em 1em 0 0;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li {
-    display: inline-block;
     font-size: 1.75em;
+    font-family: "Oswald", Arial, sans-serif;
+    border-top: 1px solid #343A40;
+}
+
+nav li:first-child {
+    border-top: none;
 }
 
 nav li a {
     display: block;
     color:#343A40;
-    text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
+
+
+/*Style rules for main content area*/
  main {
-     clear: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    font-size: 1.15em;
+    margin: 3%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2%;
  }
 
+ 
+.portait {
+    padding: 1%; 
+    text-align: center;
+    width: 50%;
+}
+
+
+.about {
+    width: 100%;
+    text-align: center;   
+}
+
+
+/*Style rules for certificatons page */
+
+ 
+ #contact {
+    text-align: center;
+}
+
+
+
+/*Style rules for footer area*/
  footer {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     color:#343A40;
     padding: 0 1em;
 }
 
-footer p {
+/*footer p {
     float: left;
 }
-
+*/
 footer a {
-    float: right;
     color:#343A40;
-    padding: 1em;
+    padding: 0.5em;
 }
 
-#contact {
-    text-align: center;
-}
