@@ -1,6 +1,6 @@
 /* 
 Student Name: Laura Ristoff 
-Date: 04/19/2021
+Date: 04/21/2021
 File Name: styles.css
 */ 
 
@@ -27,6 +27,7 @@ h1 {
     font-family: atocha,sans-serif;
     font-weight: 400;
     font-style: normal;
+<<<<<<< HEAD
     text-align: center;
 }
 
@@ -35,17 +36,30 @@ h3 {
     text-align: center;
 }
 
+=======
+}
+
+h3 {
+    font-family: "Oswald", sans-serif;
+}
+
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 /*Style rules for header*/
 header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #faf9f9;
+<<<<<<< HEAD
     height: 125px;    
+=======
+    height: 150px;    
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 }
 
 header img {
     margin: 0 auto;
+<<<<<<< HEAD
     width: auto;
 }
 
@@ -53,6 +67,11 @@ header img {
 
 
 
+=======
+    background-color: #faf9f9;
+}
+
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 /*Style rules for navigation*/
 nav {
     padding: 1%;
@@ -92,12 +111,17 @@ nav li a {
     background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
     
     background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+<<<<<<< HEAD
    
+=======
+    
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
     font-size: 1.15em;
     margin: 3%;
     border-radius: 20px;
     text-align: center;
     padding: 2%;
+<<<<<<< HEAD
     clear: right;
  }
 
@@ -120,6 +144,23 @@ nav li a {
 .form {
     text-align: left;
 }
+=======
+ }
+
+ 
+.portait {
+    padding: 1%; 
+    text-align: center;
+    width: 50%;
+}
+
+
+.about {
+    width: 100%;
+    text-align: center;   
+}
+
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 
 /*Style rules for certificatons page */
 
@@ -145,6 +186,7 @@ footer a {
     padding: 0.5em;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -185,9 +227,13 @@ nav li a {
     /*Desktop Viewport: Style rule for header*/
 header {
     width: 25%;
+=======
+/*footer p {
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
     float: left;
     padding-bottom: 0;
 }
+<<<<<<< HEAD
 
 
 
@@ -246,3 +292,11 @@ nav li a:hover {
         color: #000;
     }
 }
+=======
+*/
+footer a {
+    color:#343A40;
+    padding: 0.5em;
+}
+
+>>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
