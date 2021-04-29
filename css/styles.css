@@ -1,11 +1,11 @@
 /* 
 Student Name: Laura Ristoff 
-Date: 04/21/2021
+Date: 04/29/2021
 File Name: styles.css
 */ 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -27,7 +27,6 @@ h1 {
     font-family: atocha,sans-serif;
     font-weight: 400;
     font-style: normal;
-<<<<<<< HEAD
     text-align: center;
 }
 
@@ -36,30 +35,21 @@ h3 {
     text-align: center;
 }
 
-=======
+/*Style rule for box-sizing applies to all elements*/
+* {
+    box-sizing: border-box;
 }
 
-h3 {
-    font-family: "Oswald", sans-serif;
-}
-
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
+/*Mobile Viewport: Style rules for mobile viewport*/
 /*Style rules for header*/
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #faf9f9;
-<<<<<<< HEAD
     height: 125px;    
-=======
-    height: 150px;    
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 }
 
 header img {
     margin: 0 auto;
-<<<<<<< HEAD
     width: auto;
 }
 
@@ -67,11 +57,6 @@ header img {
 
 
 
-=======
-    background-color: #faf9f9;
-}
-
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
 /*Style rules for navigation*/
 nav {
     padding: 1%;
@@ -103,7 +88,58 @@ nav li a {
 
 
 /*Style rules for main content area*/
- main {
+main {
+    background-color: #faf9f9;
+    font-size: 1.15em;
+    margin: 3%;
+    border-radius: 20px;
+    padding: 2%;
+    clear: right;
+ }
+
+h1 {
+    padding: 1em;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+/*Style Rules for home page*/
+.about {
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+} 
+
+.me {
+    padding: 1em;   
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Style rules for certifications page*/
+#adobe, #msoffice, #mta {
+    margin: 0 2%;
+    text-align: left;
     background: hsla(154, 100%, 76%, 1);
 
     background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
@@ -111,64 +147,55 @@ nav li a {
     background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
     
     background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
-<<<<<<< HEAD
-   
-=======
-    
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
-    font-size: 1.15em;
-    margin: 3%;
     border-radius: 20px;
-    text-align: center;
-    padding: 2%;
-<<<<<<< HEAD
-    clear: right;
- }
-
-
-.about {
-    width: 100%;
-    text-align: left; 
-     
 }
 
-#adobe, #msoffice, #mta {
+.cert-description {
+    padding: 5%;
+}
+
+/*Style rules for projects page*/
+.ptc {
     margin: 0 2%;
     text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+    padding: 5%;
 }
 
-#adobe ul li {
-    list-style-type: none;
+.appbrewery {
+    margin: 0 2%;
+    text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+    padding: 5%;
 }
 
+
+/*Styles rules for contact form*/
 .form {
     text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
 }
-=======
- }
-
- 
-.portait {
-    padding: 1%; 
-    text-align: center;
-    width: 50%;
-}
-
-
-.about {
-    width: 100%;
-    text-align: center;   
-}
-
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
-
-/*Style rules for certificatons page */
-
- 
- #contact {
-    text-align: center;
-}
-
 
 
 /*Style rules for footer area*/
@@ -176,7 +203,7 @@ nav li a {
     font-size: 1em;
     text-align: center;
     color:#343A40;
-    padding: 0 1em;
+    padding: 1em;
     clear: both;
 }
 
@@ -186,7 +213,6 @@ footer a {
     padding: 0.5em;
 }
 
-<<<<<<< HEAD
 
 
 
@@ -194,29 +220,51 @@ footer a {
 @media screen and (min-width: 630px), print {
 
 
-/*Tablet Viewport: show tablet-desktop class, hide mobile class*/
-.tablet-desktop {
+    /*Tablet Viewport: show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
     display: block;
-}
+    }
 
 
-/*Tablet Viewport: style rule for header*/
-header {
-    position: static;
+    /*Tablet Viewport: style rule for header*/
+    header {
     padding-bottom: 2%;
-}
+    }
 
 
-/*Tablet Viewport: style rules for nav area*/
-nav li {
+    /*Tablet Viewport: style rules for nav area*/
+    nav li {
     border-top: none;
     display: inline-block;
     
-}
+    }
 
-nav li a {
+    nav li a {
     padding: 0.1em 0.75em;
-}
+    }
+
+    /*Tablet Viewport: style rules for main content*/
+    .badge {
+        margin: auto;
+        padding: 1%;
+    }
+
+    .cert-description {
+        padding: 5%;
+    }
+
+   
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
 
 }/*End Media Query: Tablet*/
 
@@ -225,50 +273,91 @@ nav li a {
 @media screen and (min-width: 1015px), print {
 
     /*Desktop Viewport: Style rule for header*/
-header {
-    width: 25%;
-=======
-/*footer p {
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
-    float: left;
-    padding-bottom: 0;
-}
-<<<<<<< HEAD
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
 
 
+    /*Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 1em 1em 0 0;
+        padding-bottom: 4%;
+    }
 
-/*Desktop Viewport: Style rules for nav area */
-nav {
-    float: right;
-    width: 70%;
-    margin: 1em 1em 0 0;
-    padding-bottom: 4%;
-}
+    nav ul {
+        text-align: right;
+    }
 
-nav ul {
-    text-align: right;
-}
+    nav li {
+        border: none;
+    }
 
-nav li {
-    border: none;
-}
+    nav li a {
+        padding: 0.5em 1em;
+    }
 
-nav li a {
-    padding: 0.5em 1em;
-}
+    nav li a:hover {
+        color: #faf9f9;
+        background-color: #343A40;
+        border-radius: 10px;
+    }
 
-nav li a:hover {
-    color: #faf9f9;
-    background-color: #343A40;
-    border-radius: 10px;
-}
+    .frame {
+        opacity: 0.9;
+    }
+    
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+    }
 
-/*Desktop Viewport: Style Rules for Main */
-#adobe, #msoffice, #mta {
-    width: 29%;
-    float: left;
-    margin: 0 2%;
-}
+    /*Desktop Viewport: Style Rules for Main */
+    #adobe, #msoffice, #mta {
+        margin: 0 2%;
+        background: hsla(154, 100%, 76%, 1);
+
+        background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+        background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+        background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    }
+
+    .me {
+        padding: 2em;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .portrait {
+        padding-top: 4%;
+    }
+
+    .certifications {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    
+
+    
+
 
 
 
@@ -292,11 +381,3 @@ nav li a:hover {
         color: #000;
     }
 }
-=======
-*/
-footer a {
-    color:#343A40;
-    padding: 0.5em;
-}
-
->>>>>>> e043bcf4d1defd6c2e9b3ac3057fabdd0b21e0e1
