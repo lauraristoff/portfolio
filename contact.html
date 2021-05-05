@@ -58,15 +58,57 @@
 
     <!--Use the main area to add main page content, articles, pictures-->
     <main>
+<div id="form" class="form">
 
-        <h1>Get in Touch....Let's Build Something Together</h1>
-        
-        <form>
-            <div class="cognito form">
-                <script src="https://www.cognitoforms.com/s/14NV-XYyGUaPIAqwdxBJDQ"></script>
-                <script>Cognito.load("forms", { id: "1" });</script>
-            </div>
-        </form>
+            <h1>Let's Build Something Together</h1>
+            <form class="form-grid"><!--Start Form-->
+
+                <fieldset>
+                    <legend>Client Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName" required>
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <p>I would like more information about:</p>
+
+                    <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Web Development">Web Development</label>
+
+                    <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Graphic Design">Graphic Design</label>
+
+                    <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Education">Education & Training</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Client Needs</legend>
+                    <label for="reference">What can I help with?</label>
+                    <select name="reference" id="reference">
+                        <option value="application">Initial Website Build</option>
+                        <option value="friend">Website redesign</option>
+                        <option value="google">Web Accessibility</option>
+                        <option value="social">Graphic Design</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="questions">Questions?</label>
+                    <textarea name="questions" id="questions" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit" class="btn">
+
+            </form>
+        </div>
+  
     </main>
 
     <!--Use the footer area to add contact information-->
