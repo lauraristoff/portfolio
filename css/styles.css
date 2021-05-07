@@ -5,7 +5,7 @@ File Name: styles.css
 */ 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,7 +18,7 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-img {
+img, video {
     max-width: 100%;
     display: block;
 }
@@ -104,6 +104,14 @@ main {
     padding: 2%;
     clear: right;
  }
+
+video {
+    margin: 0 auto 4%;
+}
+
+audio {
+    margin: 0 auto;
+}
 
 h1 {
     padding: 1em;
@@ -243,17 +251,25 @@ label {
 
 /*Style rules for footer area*/
  footer {
-    font-size: 1em;
+    font-size: 1.15em;
     text-align: center;
     color:#343A40;
-    padding: 1em;
+    padding: 2%;
     clear: both;
 }
 
+footer p {
+    margin: 0;
+}
 
 footer a {
     color:#343A40;
     padding: 0.5em;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -296,8 +312,6 @@ footer a {
         padding: 5%;
     }
 
-   
-
     .grid {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -320,7 +334,7 @@ footer a {
         border: 1px solid #343A40;
         border-collapse: collapse;
         margin: 0 auto;
-        width: 100%;
+        width: 70%;
     }
 
     caption {
@@ -434,6 +448,10 @@ footer a {
         grid-gap: 10px;
     }
 
+    .video {
+        margin: 1% auto;
+    }
+
     /*Desktop Viewport: Style rules for form element*/
     form {
         width: auto;
@@ -452,9 +470,6 @@ footer a {
     
 
     
-
-
-
 
 }/*End Media Query: Desktop*/
 
