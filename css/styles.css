@@ -136,7 +136,8 @@ h1 {
 } 
 
 .me {
-    padding: 1em;   
+    padding: 1em; 
+    margin: auto;
 }
 
 .pic-text {
