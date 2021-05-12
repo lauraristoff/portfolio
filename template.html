@@ -40,13 +40,29 @@
 
 
 <body>
+
     <!--Use the header are for the website name and logo-->
-    <header>
+    <header id="lr-logo">
         <img src="images/brandlogo-01.png" height="150" alt="brand logo of sunburst and initials LR">
     </header>
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
+    <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">About</a>
+				<a href="projects.html">Classes</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+        </nav>
+
+    <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="certifications.html">Certifications</a></li>
@@ -69,12 +85,13 @@
             </div>
             <div>  
                 <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
-                <a href="https://twitter.com/LauraRistoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/laura-ristoff-77336b1a0/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
             </div> 
         </div>
     </footer>
 
+    <script src="scripts/script.js"></script>
 
 </body>
 

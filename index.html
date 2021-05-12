@@ -1,7 +1,7 @@
 <!--
     Student Name: Laura Ristof
     File Name: index.html
-    Date: 05/07/2021
+    Date: 
 -->
 
 <!DOCTYPE html>
@@ -40,76 +40,93 @@
 <body>
 
     <div id="container">
-    <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo.png" height="150" alt="brand logo of sunburst and initials LR">
-    </header>
-
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!--Use the main area to add main page content, articles, pictures-->
-    <main>
-        
 
         
-
-        <div class="about">
-            <section class="me">
-                <h1 style="padding-bottom: 0">Hi! I'm Laura Ristoff</h1>
-                <h3 style="margin-top: 0">Frontend Developer from St. Petersburg, Florida</h3>
-                <p>Art and design are my favorite part of our modern world. I am an intensely visual person who prefers to see a visual representation of a subject, rather than to read it. Don’t get me wrong, I’m an avid reader, but for me the beauty of visual design evokes a stronger connection. Beautiful things must also be functional, and this is where my skills have a home. I’m Laura Ristoff, a frontend web developer and User Interface designer with an eye for solving problems. I specialize in web development, graphic design, and education & training. </p>
-
-            </section>
-
-            <figure class="portrait">
-                <img style="border-radius: 50%; box-shadow: 10px 10px 10px #373a40; margin: auto;" src="images/portrait.png" alt="portrait of Laura Ristoff">
-            </figure>
-        </div>
-
-        <h1>Specializations</h1>
-
-        <div class="grid">
-            <figure class="frame">
-                <a href="projects.html"><img src="images/webdevelopment.png" alt="laptop computer sitting open on a desk"></a>
-                <figcaption class="pic-text">Frontend Web Development</figcaption>
-            </figure>
-
-            <figure class="frame">
-                <a href="https://www.lauraristoff.com/"><img src="images/graphicdesign.png" alt="graphic design tools and color wheels"></a>
-                <figcaption class="pic-text">Graphic Design</figcaption>
-            </figure>
-
-            <figure class="frame">
-                <a href="https://drive.google.com/file/d/1faYvUnSgy33YuEJ4cboZZAWLJuyDcdOI/view?usp=sharing"><img src="images/education.png" alt="stack of books, an apple, and blocks sitting on a table"></a>
-                <figcaption class="pic-text">Education</figcaption>
-            </figure>
-        </div>
-
         
-    </main>
+        <!--Use the header are for the website name and logo-->
+        <header id="lr-logo">
+            <a href="index.html"><img src="images/brandlogo.png" height="150" alt="Laura Ristoff: frontend web developer home page"></a>
+        </header>
 
-    <!--Use the footer area to add contact and copyright information-->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <p>&copy; Laura Ristoff 2021 </p>
+        <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">Certifications</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+        </nav>
+
+
+        <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Use the main area to add main page content, articles, pictures-->
+        <main>
+        
+            <h1>Hi! I'm Laura Ristoff</h1>
+            <div class="about">
+                <section class="bio">
+                    
+                    <h2>Frontend Web Developer</h2>
+                    <p>Art and Design are my favorite part of our modern world. I am an intensely visual person who prefers to see a visual representation of a subject, rather than to read it. Don’t get me wrong, I’m an avid reader, but for me the beauty of visual design evokes a stronger connection. Beautiful things must also be functional, and this is where my skills have a home. I’m Laura Ristoff, a frontend web developer and user interface designer with an eye for solving problems. I specialize in frontend web development, graphic design, and education & training. </p>
+
+                </section>
+
+                <figure class="portrait">
+                    <img style="border-radius: 50%; box-shadow: 10px 10px 10px #373a40; margin: auto;" src="images/portrait.png" alt="portrait of Laura Ristoff">
+                </figure>
             </div>
-            <div>  
-                <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
-                <a href="https://twitter.com/LauraRistoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/laura-ristoff-77336b1a0/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-            </div> 
-        </div>
-    </footer>
-</div>
+
+            <h1>Specializations</h1>
+
+            <div class="grid">
+                <figure class="frame">
+                    <a href="projects.html"><img src="images/webdevelopment.png" alt="laptop computer sitting open on a desk"></a>
+                    <figcaption class="pic-text">Frontend Web Development</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="https://www.lauraristoff.com/"><img src="images/graphicdesign.png" alt="graphic design tools and color wheels"></a>
+                    <figcaption class="pic-text">Graphic Design</figcaption>
+                </figure>
+
+                <figure class="frame">
+                    <a href="https://drive.google.com/file/d/1faYvUnSgy33YuEJ4cboZZAWLJuyDcdOI/view?usp=sharing"><img src="images/education.png" alt="stack of books, an apple, and blocks sitting on a table"></a>
+                    <figcaption class="pic-text">Education</figcaption>
+                </figure>
+            </div>
+            
+        </main>
+
+        <!--Use the footer area to add contact and copyright information-->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <p>&copy; Laura Ristoff 2021 </p>
+                </div>
+                <div>  
+                    <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
+                    <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div> 
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

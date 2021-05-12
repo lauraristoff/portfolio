@@ -1,7 +1,7 @@
 <!--
     Student Name: Laura Ristof
     File Name: contact.html
-    Date: 05/07/2021
+    Date: 04/29/2021
 -->
 
 <!DOCTYPE html>
@@ -41,92 +41,112 @@
 
 
 <body>
-    <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo.png" height="150" alt="brand logo of sunburst and initials LR">
-    </header>
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="container">
 
-    <!--Use the main area to add main page content, articles, pictures-->
-    <main>
-
+        <!--Use the header are for the website name and logo-->
+        <header id="lr-logo">
+            <img src="images/brandlogo.png" height="150" alt="Laura Ristoff: frontend web developer home page">
+        </header>
         
-        <div id="form" class="form">
+        <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">Certifications</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+
+        </nav>
+
+        <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Use the main area to add main page content, articles, pictures-->
+        <main>
 
             <h1>Let's Build Something Together</h1>
-            <form class="form-grid" action="mailto:lauraristoff83@gmail.com" method="post" enctype="text/plain"><!--Start Form-->
+            <div id="form" class="form">
 
-                <fieldset>
-                    <legend>Client Information</legend>
-                    <label for="fName">First Name:</label>
-                    <input type="text" id="fName" name="fName" required>
+                <h2>Contact Me</h2>
+                <form class="form-grid" action="mailto:lauraristoff83@gmail.com" method="post" enctype="text/plain"><!--Start Form-->
 
-                    <label for="lName">Last Name:</label>
-                    <input type="text" name="lName" id="lName" required>
+                    <fieldset>
+                        <legend>Client Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
 
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </fieldset>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
 
-                <fieldset>
-                    <legend>Additional Information</legend>
-                    <p>I would like more information about:</p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
 
-                    <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Web Development">Web Development</label>
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
 
-                    <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Graphic Design">Graphic Design</label>
+                        <label for="grpfit"><input type="checkbox" name="interest" id="webdev" value="Web Development">Web Development</label>
 
-                    <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Education">Education & Training</label>
-                </fieldset>
+                        <label for="prtrain"><input type="checkbox" name="interest" id="graphicdes" value="Graphic Design">Graphic Design</label>
 
-                <fieldset>
-                    <legend>Client Needs</legend>
-                    <label for="reference">What can I help with?</label>
-                    <select name="reference" id="reference">
-                        <option value="application">Initial Website Build</option>
-                        <option value="friend">Website redesign</option>
-                        <option value="google">Web Accessibility</option>
-                        <option value="social">Graphic Design</option>
-                        <option value="other">Other</option>
-                    </select>
+                        <label for="nutr"><input type="checkbox" name="interest" id="education" value="Education">Education & Training</label>
+                    </fieldset>
 
-                    <label for="questions">Questions?</label>
-                    <textarea name="questions" id="questions" cols="30" rows="5"></textarea>
-                </fieldset>
+                    <fieldset>
+                        <legend>Client Needs</legend>
+                        <label for="reference">What can I help with?</label>
+                        <select name="reference" id="reference">
+                            <option value="application">Initial Website Build</option>
+                            <option value="friend">Website redesign</option>
+                            <option value="google">Web Accessibility</option>
+                            <option value="social">Graphic Design</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                <input type="submit" id="submit" value="Submit" class="btn">
+                        <label for="questions">Questions?</label>
+                        <textarea name="questions" id="questions" cols="30" rows="5"></textarea>
+                    </fieldset>
 
-            </form>
-        </div>
-        
-    </main>
+                    <input type="submit" id="submit" value="Submit" class="btn">
 
-    <!--Use the footer area to add contact information-->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <p>&copy; Laura Ristoff 2021 </p>
+                </form>
             </div>
-            <div>  
-                <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
-                <a href="https://twitter.com/LauraRistoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/laura-ristoff-77336b1a0/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-            </div> 
-        </div>
-    </footer>
+            
+        </main>
 
+        <!--Use the footer area to add contact information-->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <p>&copy; Laura Ristoff 2021 </p>
+                </div>
+                <div>  
+                    <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
+                    <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div> 
+            </div>
+        </footer>
+    </div> 
+
+    <script src="scripts/script.js"></script>
 
 </body>
 

@@ -1,7 +1,7 @@
 <!--
     Student Name: Laura Ristof
     File Name: certifications.html
-    Date: 05/07/2021
+    Date: 
 -->
 
 <!DOCTYPE html>
@@ -41,119 +41,137 @@
 
 <body>
 
-    
-    <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo.png" height="150" alt="brand logo of sunburst and initials LR">
-    </header>
+    <div id="container">
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav class="mobile">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!--Use the header are for the website name and logo-->
+        <header id="lr-logo">
+            <img src="images/brandlogo.png" height="150" alt="Laura Ristoff: frontend web developer home page">
+        </header>
 
-    <!--Use the main area to add main page content, articles, pictures-->
-    <main>
+        <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">Certifications</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
 
-        <h1>Industry Certifications</h1>
+		</nav>
 
-        <div class="certifications">
-            <section id="adobe">
-                    <h3>Adobe Certified Professional in Visual Design</h3>
-                    <img class="badge" src="images/adobebadges.png" alt="collection of adobe creative cloud professional badges for photoshop and illustrator">
-                    <p class="cert-description">Certified Adobe Professional in Visual Design using Photoshop and Illustrator software applications.</p>
-            </section>
+        <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <section id="mta">
-                <h3>Microsoft Technology Associate: Introduction to Programming</h3>
-                <img class="badge" src="images/mtabadges.png" alt="collection of professional certifications for html, css, and javascript">
-                <p class="cert-description">Certified Microsoft Technology Associate: Introduction to Programming HTML5 and CSS, and JavaScript.</p>
-            </section>
+        <!--Use the main area to add main page content, articles, pictures-->
+        <main>
 
-            <section id="msoffice">
-                    <h3>Microsoft Office Specialist</h3>
-                    <img class="badge" src="images/msoffice.png" alt="certified adobe visual design badge">
-                    <p class="cert-description">Certified Microsoft Office Specialist in Word, Excel, and Power Point software applications.</p>
-            </section>
-        </div>
-        
-        <div class="tablet-desktop">
-            <table><!--Start Table-->   
-                <caption>Tools & Technologies</caption>
-                <tr><!--Row 1-->
-                    <th>Mark-Up, Programming & Validation</th>
-                    <th>Code Editors & Dev Tools</th>
-                    <th>JS Frameworks & Libraries</th>
-                    <th>Frontend Assets</th>
-                    <th>Design Tools</th>
-                    
-                </tr>
+            <h1>Industry Certifications</h1>
 
-                <tr><!--Row 2-->
-                    <td>HTML5</td>
-                    <td>Visual Studio Code</td>
-                    <td>jQuery</td>
-                    <td>Google Fonts</td>
-                    <td>Adobe Photoshop</td>
-                </tr>
+            <div class="certifications">
+                <section id="adobe">
+                        <h2>Adobe Certified Professional in Visual Design</h2>
+                        <img class="badge" src="images/adobebadges.png" alt="collection of adobe creative cloud professional badges for photoshop and illustrator">
+                        <p class="cert-description">Certified Adobe Professional in Visual Design using Photoshop and Illustrator software applications.</p>
+                </section>
 
-                <tr><!--Row 3-->
-                    <td>CSS3</td>
-                    <td>Atom</td>
-                    <td>React.js</td>
-                    <td>Adobe Fonts</td>
-                    <td>Adobe Illustrator</td>
-                </tr>
+                <section id="mta">
+                    <h2>Microsoft Technology Associate: Introduction to Programming</h2>
+                    <img class="badge" src="images/mtabadges.png" alt="collection of professional certifications for html, css, and javascript">
+                    <p class="cert-description">Certified Microsoft Technology Associate: Introduction to Programming HTML5 and CSS, and JavaScript.</p>
+                </section>
 
-                <tr><!--Row 4-->
-                    <td>JavaScript</td>
-                    <td>Chrome Dev Tools</td>
-                    <td>Vue.js</td>
-                    <td>Font Awesome</td>
-                    <td>Adobe XD</td>
-                </tr>
-
-                <tr><!--Row 5-->
-                    <td>W3C Validation</td>
-                    <td>Git</td>
-                    <td>node.js</td>
-                    <td>Unsplash</td>
-                    <td>Balsamiq Cloud</td>
-                </tr>
-
-                <tr><!--Row 6-->
-                    <td>WAVE Accessibility</td>
-                    <td>GitHub</td>
-                    <td>JSON</td>
-                    <td>Flavicon</td>
-                    <td>Canva</td>
-                </tr>
-            
-            </table>
-        </div>
-        
-        
-    </main>
-
-    <!--Use the footer area to add contact information-->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <p>&copy; Laura Ristoff 2021 </p>
+                <section id="msoffice">
+                        <h2>Microsoft Office Specialist</h2>
+                        <img class="badge" src="images/msoffice.png" alt="certified adobe visual design badge">
+                        <p class="cert-description">Certified Microsoft Office Specialist in Word, Excel, and Power Point software applications.</p>
+                </section>
             </div>
-            <div>  
-                <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
-                <a href="https://twitter.com/LauraRistoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/laura-ristoff-77336b1a0/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-            </div> 
-        </div>
-    </footer>
+        
+            <div class="tablet-desktop">
+                <table><!--Start Table-->   
+                    <caption>Tools & Technologies</caption>
+                    <tr><!--Row 1-->
+                        <th>Mark-Up, Programming & Validation</th>
+                        <th>Code Editors & Dev Tools</th>
+                        <th>JS Frameworks & Libraries</th>
+                        <th>Frontend Assets</th>
+                        <th>Design Tools</th>
+                        
+                    </tr>
 
+                    <tr><!--Row 2-->
+                        <td>HTML5</td>
+                        <td>Visual Studio Code</td>
+                        <td>jQuery</td>
+                        <td>Google Fonts</td>
+                        <td>Adobe Photoshop</td>
+                    </tr>
+
+                    <tr><!--Row 3-->
+                        <td>CSS3</td>
+                        <td>Atom</td>
+                        <td>React.js</td>
+                        <td>Adobe Fonts</td>
+                        <td>Adobe Illustrator</td>
+                    </tr>
+
+                    <tr><!--Row 4-->
+                        <td>JavaScript</td>
+                        <td>Chrome Dev Tools</td>
+                        <td>Vue.js</td>
+                        <td>Font Awesome</td>
+                        <td>Adobe XD</td>
+                    </tr>
+
+                    <tr><!--Row 5-->
+                        <td>W3C Validation</td>
+                        <td>Git</td>
+                        <td>node.js</td>
+                        <td>Unsplash</td>
+                        <td>Balsamiq Cloud</td>
+                    </tr>
+
+                    <tr><!--Row 6-->
+                        <td>WAVE Accessibility</td>
+                        <td>GitHub</td>
+                        <td>JSON</td>
+                        <td>Flavicon</td>
+                        <td>Canva</td>
+                    </tr>
+                
+                </table>
+            </div>
+        
+        
+        </main>
+
+        <!--Use the footer area to add contact information-->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <p>&copy; Laura Ristoff 2021 </p>
+                </div>
+                <div>  
+                    <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
+                    <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div> 
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
     
 </body>
 

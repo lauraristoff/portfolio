@@ -1,7 +1,7 @@
 <!--
     Student Name: Laura Ristof
     File Name: projects.html
-    Date: 05/07/2021
+    Date: 04/29/2021
 -->
 
 <!DOCTYPE html>
@@ -40,13 +40,29 @@
 
 
 <body>
+
     <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo.png" height="150" alt="brand logo of sunburst and initials LR">
+    <header id="lr-logo">
+        <img src="images/brandlogo.png" height="150" width="322" alt="Laura Ristoff: frontend web developer home page">
     </header>
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
+    <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">Certifications</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+
+        </nav>
+
+    <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="certifications.html">Certifications</a></li>
@@ -62,12 +78,12 @@
 
         <div class="projects">
             <section class="ptc">
-                    <h3>Pinellas Technical College Projects</h3>
+                    <h2>Pinellas Technical College Projects</h2>
                     <p>Projects completed as coursework while attending Pinellas Technical College Web Development Program. These projects were built using Visual Studio Code editor, HTML5 and CSS3.</p>
             </section>
 
             <section class="appbrewery">
-                    <h3>The App Brewery Projects</h3>
+                    <h2>The App Brewery Projects</h2>
                     <p>Projects completed as coding challenges and learning experiences of an online Web Development boot camp from The App Brewery London hosted by Udemy. These projects were built using Atom Code Editor, HTML5, CSS3, JavaScript languages.  </p>
             </section>
         </div>  
@@ -82,11 +98,13 @@
             </div>
             <div>  
                 <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
-                <a href="https://twitter.com/LauraRistoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/laura-ristoff-77336b1a0/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
             </div> 
         </div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 
 
 </body>
