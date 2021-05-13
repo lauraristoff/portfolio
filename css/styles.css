@@ -1,397 +1,513 @@
-/*  
-Author: Laura Ristoff 
+/* 
+Student Name: Laura Ristoff 
+Date: 04/29/2021
 File Name: styles.css
-Date: 04/02/2021
-*/
+*/ 
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, ul,section, aside, figure, figcaption {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rule for images */
-img {
+/*Style rules for body and images and headings*/
+body {
+    background-color: #faf9f9;
+    color: #343A40;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+img, video {
     max-width: 100%;
     display: block;
 }
 
-/* Style rule for box sizing applies to all elements */  
-* {  
-        box-sizing: border-box; 
-     }
-
-/*Style rules for mobile viewport*/
-
-aside {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #373684;
-  text-shadow: 3px 3px 10px #8280cb;
+h1 {
+    font-family: atocha,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
 }
 
-figure {
-  position: relative;
-  max-width: 275px;
-  margin: 2% auto;
-  border: 8px solid #373684;
+h2 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
 }
 
-figcaption {
-  position: absolute;
-  bottom: 0;
-  background: rgba(55, 54, 132, 0.7);
-  color: #fff;
-  width: 100%;
-  padding: 5% 0;
-  text-align: center;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
+/*Style rule for box-sizing applies to all elements*/
+* {
+    box-sizing: border-box;
 }
-/*Hide tab-desk class*/
-.tab-desk {
+
+/*Mobile Viewport: Style rules for mobile viewport*/
+/*Style rules for header*/
+header {
+    top: 0;
+    background-color: #faf9f9;
+    height: 125px;    
+}
+
+header img {
+    margin: 4% auto;
+    width: auto;
+}
+
+/*Show mobile class, hide tablet-desktop class, and menu-links ID*/
+.mobile {
+    display: block;
+}
+
+.tablet-desktop, #menu-links {
     display: none;
 }
 
-#menu-links {
-  display: none;
+.table-tab-desktop {
+    display: none;
 }
 
 
-/* Style rules for header content */
-header {
-    text-align: center;
-    font-size: 1.5em;
-    color: #373684;
-    
-}
- 
-header h1 {
-    font-family: "DM Serif Display", serif;
-    font-size: 1.5em;
-    padding: 4%;
-    margin-right: 15%;
-}
-
-/* Style rules for navigation area */
+/*Style rules for hamburger menu*/
 .mobile-nav a {
-    color: #fff;
+    color: #343A40;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 2em;
     text-decoration: none;
     padding: 3%;
     display: block;
 }
- 
+
 .mobile-nav a.menu-icon {
     display: block;
-    position: absolute;
-    right: 0; 
-    top: 0;  
-}
- 
-.menu-icon div {
-    height: 50px;
-    width: 50px;
-    background-color: #373684;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
-nav {
-    background-color: #373684;
-}
 
-/* Style rules for main content */
+/*Style rules for main content area*/
 main {
+    background-color: #faf9f9;
+    font-size: 1.15em;
+    margin: 3%;
+    border-radius: 20px;
     padding: 2%;
-    background-color: #e5e9fc;
-    overflow: auto;
-    font-family: Roboto, sans-serif;
+    clear: right;
+    line-height: 1.9;
 }
- 
-main p {
-    font-size: 1.25em;
+
+.portrait {
+    padding: 5%;
 }
- 
-.action {
-    font-size: 1.25em;
-    color: #373684; 
+
+h1 {
+    padding: 1em;
+}
+
+section.bio {
+    padding: 5%;
+    margin: auto;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+/*Style Rules for home page*/
+.about {
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+} 
+
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-#piano, #guitar, #violin {
-     margin: 0 2%;
-}
- 
-#info {
-    clear: left;
-    background-color: #c0caf7;
-    padding: 1% 2%;
+/*Style rules for certifications page*/
+#adobe, #msoffice, #mta {
+    margin: 0 4% 2%;
+    text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+    padding: 4%;
+
 }
 
-#info ul {
-    margin-left: 10%;
+.cert-description {
+    padding: 5%;
 }
 
-.round {
-    border-radius: 8px;
+/*Style rules for projects page*/
+.ptc {
+    margin: 2% 2%;
+    text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+    padding: 5%;
 }
 
-#contact {
-    text-align: center;
+.appbrewery {
+    margin: 2% 2%;
+    text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+    padding: 5%;
 }
 
-#rental h2 {
-  text-align: center;
+
+/*Styles rules for contact form*/
+.form {
+    text-align: left;
+    background: hsla(154, 100%, 76%, 1);
+
+    background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+    border-radius: 20px;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
 }
 
 #form h2 {
-  text-align: center;
-}
-
- 
-#contact .email-link {
-    color: #4645a8;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tel-link {
-    background-color: #373684;
-        padding: 2%;
-        margin: 0 auto;
-        width: 80%;
-        text-align: center;
-        border-radius: 5px;
-} 
-.tel-link a {
-    color: #fff;
-        text-decoration: none;
-        font-size: 1.5em;
-        display: block;
-}
- 
-.map {
-    border: 5px solid #373684;
-}
-
-/* Style rules for table elements */
-table {
-    border: 1px solid #373684;
-    border-collapse: collapse;
-    margin: 0 auto;
-    width: 100%;
-}
- 
-caption {
-    font-size: 1.5em;
-    font-weight: bold; 
-    padding: 1%;
-}
- 
-th, td {
-    border: 1px solid #373684;
-    padding: 2%; 
-}
- 
-th {
-    background-color: #373684;
-    color: #fff;
-    font-size: 1.15em;
-}
- 
-tr:nth-child(odd) {
-    background-color: #b7b7e1;  
-}
-
-/* Style rules for form elements */
-
-fieldset {
-  margin-bottom: 2%;
-}
-
-input {
-  margin-bottom: 2%;
-}
-
-fieldset legend {
-  font-weight: bold;
-  font-size: 1.25em;
-}
-
-label {
-  display: block;
-  padding-top: 3%;
+    text-align: center;
 }
 
 form #submit {
-  margin: 0 auto;
-  display: block;
-  padding: 3%;
-  background-color: #b7b7e1;
-  font-size: 1em;
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #343A40;
+    font-size: 1em;
+    border-radius: 10px;
+    color: #faf9f9;
 }
 
+/*Style rules for from elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+}
 
+fieldset legend {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+}
 
-/* Style rules for footer content */
-footer {
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+/*Style rules for footer area*/
+ footer {
+    font-size: 1.15em;
     text-align: center;
-    font-size: 0.65em;
-    clear: left;  
+    color:#343A40;
+    padding: 2%;
+    clear: both;
 }
- 
+
+footer p {
+    margin: 0;
+}
+
 footer a {
-    color: #4645a8;
-    text-decoration: none;
+    color:#343A40;
+    padding: 0.5em;
 }
 
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 550px), print {
-  
-      /* Tablet Viewport: Show tab-desk class, hide mobile class */  
-      .tab-desk {
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+/*Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+
+    /*Tablet Viewport: show tablet-desktop class, hide mobile class*/
+    .tablet-desktop {
         display: block;
-      } 
-      .mobile {
-        display: none;  
-      } 
+    }
 
-      .mobile-nav {
+    .table-tab-desktop {
         display: none;
-      }
+    }
 
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-      }
+    .mobile, .mobile-nav {
+        display: none;
+    }
 
-      aside {
-        grid-column: 1/span 2;
-      }
+    /*Tablet Viewport: style rule for header*/
+    header {
+    padding-bottom: 2%;
+    }
+
+
+    /*Tablet Viewport: style rules for nav area*/
+    nav {
+        padding-top: 4%;
+        margin-bottom: 1%;
+    }
     
-      /* Tablet Viewport: Style rule for header content */     
-      span.tab-desk {
-        display: inline;
-      }
-
-      header h1 {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-      }
-
-      /*Tablet Viewport: Style rules for nav area*/
-      nav ul {
+    nav ul {
         list-style-type: none;
         text-align: center;
-        background-color: #373684;
-      }
-      
-      nav li {
-        border-top: none;
+    }
+    
+    nav li {
+        font-size: 1.75em;
+        font-family: "Oswald", Arial, sans-serif;
         display: inline-block;
-        font-size: 1.5em;
-        border-right: 1px solid #e5e9fc;
-      }
+    }
 
-      nav li:last-child {
-        border-right: none;
-      }
-
-      nav li a {
-        padding: 0.25em 0.5em;
+    nav li a {
+        padding: 0.1em 0.75em;
         display: block;
-        color: #fff;
-        text-align: center;
+        color:#343A40; 
         text-decoration: none;
-      }
+    }
 
-      /*Tablet Viewport: Style rule for map*/
-      .map {
-        width: 500px;
-        height: 450px;
-      }
+    /*Tablet Viewport: style rules for main content*/
+    .badge {
+        margin: auto;
+        padding: 1%;
+    }
 
-      /*Tablet Viewport: Style rule for form element*/
-      form {
+    .cert-description {
+        padding: 5%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .pic-text {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    /*Tablet viewport: Style rule for form element*/
+    form {
         width: 70%;
         margin: 0 auto;
-      }
-
     }
+
+    /*Tablet Viewport: Styles for table element on projects page*/
+    table {
+        border: 1px solid #343A40;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    caption {
+        font-family: atocha,sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+        margin-top: 4%;
+    }
+
+    td, th {
+        border: 1px solid #343A40;
+        padding: 2%;
+    }
+
+    th {
+        background-color:#343A40;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
+    }
+
+}/*End Media Query: Tablet*/
+
 
 /*Media Query for Desktop Viewport*/
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 1015px), print {
 
-      /*Desktop Viewport: Style rule for header*/
-      header {
-        padding: 2%;
-      }
-
-      .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-
-      figcaption {
-        font-size: 1em;
-        position: absolute;
-      }
-      
-      aside {
-        grid-column: 1/span 4;
-      }
-      /*Desktop Viewport: Style rule for nav area*/
-      nav li a {
-        padding: 0.5em 1.5em;
-      }
-
-      nav li a:hover {
-          background-color: #e5e9fc;
-          color: #373684;
-          transform: scale(1.2);
-      }
-
-      /*Desktop Viewport: Style Rule for main content*/
-      #info ul {
-        margin-left: 5%;
-      }
-
-      main h3 {
-        font-size: 1.5em;
-      }
-
-      #piano, #guitar, #violin {
-        width: 29%;
+    /*Desktop Viewport: Style rule for header*/
+    header {
+        width: 25%;
         float: left;
-        margin: 0 2%;
-      }
-
-      /*Desktop Viewport: Style rules for table element*/
-      table {
-        width: 70%;
-      }
-
-      /*Desktop Viewport: Style rules for form elements*/
-      .form-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-      }
-
-      .btn {
-        grid-column: 1/span 2;
-      }
-
+        padding-bottom: 0;
     }
 
-    /*Media Query for Print*/
-    @media print{
-      body {
+    header img {
+        margin: 7%;
+    }
+
+
+    /*Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 1em 1em 0 0;
+        padding-bottom: 4%;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color: #faf9f9;
+        background-color: #343A40;
+        border-radius: 10px;
+    }
+
+    .frame {
+        opacity: 0.9;
+    }
+    
+    .frame:hover {
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
+        transform: translateY(10px);
+    }
+
+    /*Desktop Viewport: Style Rules for Main */
+    #adobe, #msoffice, #mta {
+        margin: 0 2%;
+        background: hsla(154, 100%, 76%, 1);
+
+        background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+        background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+        background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
+        
+    }
+
+   
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .portrait {
+        padding: 4%;
+        margin: auto;
+    }
+
+    .certifications {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .table-tab-desktop {
+        display: block;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .video {
+        margin: 1% auto;
+    }
+
+    /*Desktop Viewport: Style rules for form element*/
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+       grid-column: 1/span 3; 
+    }
+
+    
+
+    
+
+}/*End Media Query: Desktop*/
+
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
+
+}/*End Media Query for Large Viewport*/
+
+/*Media Query for Print*/
+@media print {
+
+    body {
         background-color: #fff;
         color: #000;
-      }
+    }
 }
