@@ -1,5 +1,5 @@
 /* 
-Student Name: Laura Ristoff 
+Author: Laura Ristoff 
 Date: 04/29/2021
 File Name: styles.css
 */ 
@@ -229,6 +229,7 @@ form #submit {
 /*Style rules for from elements*/
 fieldset, input, select, textarea {
     margin-bottom: 2%;
+    border-radius: 20px;
 }
 
 fieldset legend {
