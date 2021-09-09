@@ -1,7 +1,7 @@
 <!--
-    Student Name: Laura Ristof
+    Author: Laura Ristof
     File Name: template.html
-    Date: 04/21/2021
+    Date: 
 -->
 
 <!DOCTYPE html>
@@ -11,7 +11,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Ristoff // Web Developer</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Frontend Web Developer // Laura Ristoff</title>
+    <meta name="title" content="Frontend Web Developer">
+    <meta name="description" content="Frontend development services from an industry certified and skilled web developer, Laura Ristoff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Frontend Web Developer">
+    <meta property="og:description" content="Frontend development services from an industry certified and skilled web developer, Laura Ristoff">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Frontend Web Developer">
+    <meta property="twitter:description" content="Frontend development services from an industry certified and skilled web developer, Laura Ristoff">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     
 
     <!--Styles-->
@@ -40,13 +58,29 @@
 
 
 <body>
+
     <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo-01.png" height="150" alt="brand logo of sunburst and initials LR">
+    <header id="lr-logo">
+        <a href="index.html"><img src="images/brandlogo.png" height="150" alt="linked image for Laura Ristoff: frontend web developer"></a>
     </header>
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
+    <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">About</a>
+				<a href="projects.html">Classes</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+
+        </nav>
+
+    <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="certifications.html">Certifications</a></li>
@@ -63,12 +97,19 @@
 
     <!--Use the footer area to add contact information-->
     <footer>
-        <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> &nbsp;
-        <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> &nbsp;
-        <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-        <p>&copy; Laura Ristoff 2021 </p>
+        <div class="footer-grid">
+            <div>
+                <p>&copy; Laura Ristoff 2021 </p>
+            </div>
+            <div>  
+                <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
+                <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div> 
+        </div>
     </footer>
 
+    <script src="scripts/script.js"></script>
 
 </body>
 

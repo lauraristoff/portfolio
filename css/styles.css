@@ -1,11 +1,11 @@
 /* 
-Student Name: Laura Ristoff 
-Date: 04/19/2021
+Author: Laura Ristoff 
+Date: 04/29/2021
 File Name: styles.css
 */ 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,7 +18,7 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-img {
+img, video {
     max-width: 100%;
     display: block;
 }
@@ -30,7 +30,7 @@ h1 {
     text-align: center;
 }
 
-h3 {
+h2 {
     font-family: "Oswald", sans-serif;
     text-align: center;
 }
@@ -49,42 +49,41 @@ header {
 }
 
 header img {
-    margin: 0 auto;
+    margin: 4% auto;
     width: auto;
 }
 
-/*Show mobile class, hide tablet class*/
-
-
-
-/*Style rules for navigation*/
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    font-size: 1.75em;
-    font-family: "Oswald", Arial, sans-serif;
-    border-top: 1px solid #343A40;
-}
-
-nav li:first-child {
-    border-top: none;
-}
-
-nav li a {
+/*Show mobile class, hide tablet-desktop class, and menu-links ID*/
+.mobile {
     display: block;
-    color:#343A40;
-    padding: 0.5em 1em;
-    text-decoration: none;
 }
 
+.tablet-desktop, #menu-links {
+    display: none;
+}
+
+.table-tab-desktop {
+    display: none;
+}
+
+
+/*Style rules for hamburger menu*/
+.mobile-nav a {
+    color: #343A40;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0;
+}
 
 
 /*Style rules for main content area*/
@@ -95,10 +94,20 @@ main {
     border-radius: 20px;
     padding: 2%;
     clear: right;
- }
+    line-height: 1.9;
+}
+
+.portrait {
+    padding: 5%;
+}
 
 h1 {
     padding: 1em;
+}
+
+section.bio {
+    padding: 5%;
+    margin: auto;
 }
 
 .frame {
@@ -119,9 +128,6 @@ h1 {
     border-radius: 20px;
 } 
 
-.me {
-    padding: 1em;   
-}
 
 .pic-text {
     position: absolute;
@@ -138,16 +144,18 @@ h1 {
 
 /*Style rules for certifications page*/
 #adobe, #msoffice, #mta {
-    margin: 0 2%;
+    margin: 0 4% 2%;
     text-align: left;
     background: hsla(154, 100%, 76%, 1);
 
     background: linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
     
     background: -moz-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
-    
+
     background: -webkit-linear-gradient(90deg, hsla(154, 100%, 76%, 0.3) 0%, hsla(234, 100%, 83%, 1) 50%, hsla(288, 100%, 81%, 1) 100%);
     border-radius: 20px;
+    padding: 4%;
+
 }
 
 .cert-description {
@@ -156,7 +164,7 @@ h1 {
 
 /*Style rules for projects page*/
 .ptc {
-    margin: 0 2%;
+    margin: 2% 2%;
     text-align: left;
     background: hsla(154, 100%, 76%, 1);
 
@@ -170,7 +178,7 @@ h1 {
 }
 
 .appbrewery {
-    margin: 0 2%;
+    margin: 2% 2%;
     text-align: left;
     background: hsla(154, 100%, 76%, 1);
 
@@ -197,20 +205,64 @@ h1 {
     border-radius: 20px;
 }
 
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%;
+}
+
+#form h2 {
+    text-align: center;
+}
+
+form #submit {
+    margin: 0 auto;
+    border: none;
+    display: block;
+    padding: 2%;
+    background-color: #343A40;
+    font-size: 1em;
+    border-radius: 10px;
+    color: #faf9f9;
+}
+
+/*Style rules for from elements*/
+fieldset, input, select, textarea {
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+fieldset legend {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
 
 /*Style rules for footer area*/
  footer {
-    font-size: 1em;
+    font-size: 1.15em;
     text-align: center;
     color:#343A40;
-    padding: 1em;
+    padding: 2%;
     clear: both;
 }
 
+footer p {
+    margin: 0;
+}
 
 footer a {
     color:#343A40;
     padding: 0.5em;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -222,9 +274,16 @@ footer a {
 
     /*Tablet Viewport: show tablet-desktop class, hide mobile class*/
     .tablet-desktop {
-    display: block;
+        display: block;
     }
 
+    .table-tab-desktop {
+        display: none;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
 
     /*Tablet Viewport: style rule for header*/
     header {
@@ -233,14 +292,27 @@ footer a {
 
 
     /*Tablet Viewport: style rules for nav area*/
-    nav li {
-    border-top: none;
-    display: inline-block;
+    nav {
+        padding-top: 4%;
+        margin-bottom: 1%;
+    }
     
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        font-size: 1.75em;
+        font-family: "Oswald", Arial, sans-serif;
+        display: inline-block;
     }
 
     nav li a {
-    padding: 0.1em 0.75em;
+        padding: 0.1em 0.75em;
+        display: block;
+        color:#343A40; 
+        text-decoration: none;
     }
 
     /*Tablet Viewport: style rules for main content*/
@@ -253,8 +325,6 @@ footer a {
         padding: 5%;
     }
 
-   
-
     .grid {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -264,6 +334,43 @@ footer a {
     .pic-text {
         font-size: 1em;
         padding: 10px;
+    }
+
+    /*Tablet viewport: Style rule for form element*/
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /*Tablet Viewport: Styles for table element on projects page*/
+    table {
+        border: 1px solid #343A40;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    caption {
+        font-family: atocha,sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+        margin-top: 4%;
+    }
+
+    td, th {
+        border: 1px solid #343A40;
+        padding: 2%;
+    }
+
+    th {
+        background-color:#343A40;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ccc;
     }
 
 }/*End Media Query: Tablet*/
@@ -277,6 +384,10 @@ footer a {
         width: 25%;
         float: left;
         padding-bottom: 0;
+    }
+
+    header img {
+        margin: 7%;
     }
 
 
@@ -313,6 +424,7 @@ footer a {
     .frame:hover {
         opacity: 1;
         box-shadow: 8px 8px 10px #808080;
+        transform: translateY(10px);
     }
 
     /*Desktop Viewport: Style Rules for Main */
@@ -328,9 +440,7 @@ footer a {
         
     }
 
-    .me {
-        padding: 2em;
-    }
+   
 
     .about {
         display: grid;
@@ -339,7 +449,8 @@ footer a {
     }
 
     .portrait {
-        padding-top: 4%;
+        padding: 4%;
+        margin: auto;
     }
 
     .certifications {
@@ -348,18 +459,38 @@ footer a {
         grid-gap: 10px;
     }
 
+    .table-tab-desktop {
+        display: block;
+    }
+
     .projects {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
     }
 
-    
+    .video {
+        margin: 1% auto;
+    }
+
+    /*Desktop Viewport: Style rules for form element*/
+    form {
+        width: auto;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+       grid-column: 1/span 3; 
+    }
 
     
 
-
-
+    
 
 }/*End Media Query: Desktop*/
 

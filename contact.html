@@ -1,7 +1,7 @@
 <!--
-    Student Name: Laura Ristof
+    Author: Laura Ristof
     File Name: contact.html
-    Date: 05/15/2021
+    Date: 04/29/2021
 -->
 
 <!DOCTYPE html>
@@ -11,10 +11,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laura Ristoff // Contact Me</title>
+   
+    <!-- Primary Meta Tags -->
+    <title>Contact - Frontend Web Developer</title>
+    <meta name="title" content="Contact - Frontend Web Developer">
+    <meta name="description" content="Let's build something together. Contact an industry certified and skilled web developer, Laura Ristoff">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Contact - Frontend Web Developer">
+    <meta property="og:description" content="Let's build something together. Contact an industry certified and skilled web developer, Laura Ristoff">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Contact - Frontend Web Developer">
+    <meta property="twitter:description" content="Let's build something together. Contact an industry certified and skilled web developer, Laura Ristoff">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!--Styles-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
 
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/f62e42ec18.js" crossorigin="anonymous"></script>
@@ -41,43 +59,112 @@
 
 
 <body>
-    <!--Use the header are for the website name and logo-->
-    <header>
-        <img src="images/brandlogo.png" height="150" alt="brand logo of sunburst and initials LR">
-    </header>
 
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="container">
 
-    <!--Use the main area to add main page content, articles, pictures-->
-    <main>
-
-        <h1>Get in Touch....Let's Build Something Together</h1>
+        <!--Use the header are for the website name and logo-->
+        <header id="lr-logo">
+            <a href="index.html"><img src="images/brandlogo.png" height="150" alt="linked image for Laura Ristoff: frontend web developer"></a>
+        </header>
         
-        <form>
-            <div class="cognito form">
-                <script src="https://www.cognitoforms.com/s/14NV-XYyGUaPIAqwdxBJDQ"></script>
-                <script>Cognito.load("forms", { id: "1" });</script>
+        <!--Mobile Navigation-->
+		<nav class="mobile-nav">
+            <a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="certifications.html">Certifications</a>
+				<a href="projects.html">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
+			
+
+        </nav>
+
+        <!--Tablet, Desktop Navigation -->
+		<nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--Use the main area to add main page content, articles, pictures-->
+        <main>
+
+            <h1>Let's Build Something Together</h1>
+            <div id="form" class="form">
+
+                <h2>Contact Me</h2>
+                <form class="form-grid" action="mailto:lauraristoff83@gmail.com" method="post" enctype="text/plain"><!--Start Form-->
+
+                    <fieldset>
+                        <legend>Client Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for="grpfit"><input type="checkbox" name="interest" id="webdev" value="Web Development">Web Development</label>
+
+                        <label for="prtrain"><input type="checkbox" name="interest" id="graphicdes" value="Graphic Design">Graphic Design</label>
+
+                        <label for="nutr"><input type="checkbox" name="interest" id="education" value="Education">Education & Training</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Client Needs</legend>
+                        <label for="reference">What can I help with?</label>
+                        <select name="reference" id="reference">
+                            <option value="application">Initial Website Build</option>
+                            <option value="friend">Website redesign</option>
+                            <option value="google">Web Accessibility</option>
+                            <option value="social">Graphic Design</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="questions">Questions?</label>
+                        <textarea name="questions" id="questions" cols="30" rows="5"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" class="btn">
+
+                </form>
             </div>
-        </form>
-    </main>
+            
+        </main>
 
-    <!--Use the footer area to add contact information-->
-    <footer>
-        
-        <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> &nbsp;
-        <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a> &nbsp;
-        <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-        <p>&copy; Laura Ristoff 2021 </p>
-    </footer>
+        <!--Use the footer area to add contact information-->
+        <footer>
+            <div class="footer-grid">
+                <div>
+                    <p>&copy; Laura Ristoff 2021 </p>
+                </div>
+                <div>  
+                    <a href="https://www.facebook.com/lauraristoff" target="_blank"><i class="fab fa-facebook fa-lg"></i></a> 
+                    <a href="https://www.twitter.com/lauraristoff" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/lauraristoff" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div> 
+            </div>
+        </footer>
+    </div> 
 
+    <script src="scripts/script.js"></script>
 
 </body>
 
