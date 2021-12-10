@@ -163,6 +163,11 @@ section.bio {
 }
 
 /*Style rules for projects page*/
+.projects {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
 .ptc {
     margin: 2% 2%;
     text-align: left;
@@ -178,6 +183,7 @@ section.bio {
 }
 
 .appbrewery {
+    width: 100%;
     margin: 2% 2%;
     text-align: left;
     background: hsla(154, 100%, 76%, 1);
@@ -463,11 +469,7 @@ footer a {
         display: block;
     }
 
-    .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
+    
 
     .video {
         margin: 1% auto;
